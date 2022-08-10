@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="subject">Cam Ring & Roller Pinion TRS 선정자료</div>
+
+    <div class="title1">고객사</div>
+    <input class="title11" type="text" />
+    <div class="title1">담당자</div>
+    <input class="title12" type="text" />    
+    <div class="title1">선정일자</div>
+    <input class="title13" type="date" />
+    
+
+    <article class="container1">
+      <div class="first">제원</div>
+      <div class="danger">※이동시간, 가감속시간 수정시 엔터를 꼭 눌러주세요</div>
+    </article>
+
+    <article class="containers11">
+      <div class="first">테이블 가로</div>      
+      <div class="third">mm</div>
+      <input
+        class="second1"
+        id="xphorizon"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      <div class="fourth">이동각</div>
+      <div class="sixth">˚</div>
+      <input
+        class="fiveth1"
+        id="dlehdrkr"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      
+    </article>
+    <article class="containers12">
+      <div class="first">테이블 세로</div>
+      <div class="third">mm</div>
+      <input
+        class="second1"
+        id="xpvertical"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />  
+      <div class="fourth">이동 시간</div>
+      <div class="sixth">sec</div>
+      <input
+        class="fiveth1"
+        id="dlehdtlrks"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+     
+    </article>
+    <article class="containers13">
+      <div class="first">테이블 질량</div>      
+      <div class="third">Kg</div>
+      <input
+        class="second1"
+        id="xpwlffid"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      <div class="fourth">가감속 시간</div>
+      <div class="sixth">sec</div>
+      <input
+        class="fiveth1"
+        id="rkrkathr"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      
+    </article>
+
+
+    </article>
+    <article class="containers14">
+      <div class="first">워크 위치 직경</div>      
+      <div class="third">mm</div>
+      <input
+        class="second1"
+        id="dnjwlrrud"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      <div class="fourth">휴지시간</div>
+      <div class="sixth">sec</div>
+      <input
+        class="fiveth1"
+        id="gbwltlrks"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />     
+    </article>
+
+    <article class="containers15">
+      <div class="first">워크 질량</div>      
+      <div class="third">Kg</div>
+      <input
+        class="second1"
+        id="dnjwlffid"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      <div class="fourth"></div>
+      <div class="sixth"></div>
+      <input
+        class="fiveth1"
+        id=""
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />    
+    </article>
+
+
+    <article class="container2">
+      <div class="first1">스펙</div>
+    </article>
+
+    <article class="containers21">
+      <div class="first">관성 모멘트</div>
+      <input
+        class="second"
+        id="ahapsxm"
+        type="number"
+      />
+      <div class="third">Kg²m</div>
+      <div class="fourth">가속부하</div>
+      <input
+        class="fiveth"
+        id="rkthrqngk"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers22">
+      <div class="first">가감속 시간</div>
+      <input
+        class="second"
+        id="rkrkathr1"
+        type="number"
+      />
+      <div class="third">sec</div>
+      <div class="fourth">마찰부하</div>
+      <input
+        class="fiveth"
+        id="akckfqngk"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers23">
+      <div class="first">각속도(등속)</div>
+      <input
+        class="second"
+        id="rkrthreh"
+        type="number"
+      />
+      <div class="third">rad/s</div>
+      <div class="fourth">가속시 필요토크</div>
+      <input
+        class="fiveth"
+        id="rkvlfdyxhzm"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers24">
+      <div class="first">등속시간</div>
+      <input
+        class="second"
+        id="emdthrtlrks"
+        type="number"
+      />
+      <div class="third">sec</div>
+      <div class="fourth">등속시 필요토크</div>
+      <input
+        class="fiveth"
+        id="emdvlfdyxhzm"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers25">
+      <div class="first">각가속도</div>
+      <input
+        class="second"
+        id="rkrrkthreh"
+        type="number"
+      />
+      <div class="third">rad/s²</div>
+      <div class="fourth">감속시 필요토크</div>
+      <input
+        class="fiveth"
+        id="rkavlfdyxhzm"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers26">
+      <div class="first">외부힘</div>
+      <div class="third">Nm</div>
+      <input
+        class="second2"
+        id="dhlqngla"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />      
+      <div class="fourth">평균토크</div>
+      <input
+        class="fiveth"
+        id="vudrbsxhzm"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers27">
+      <div class="first">마찰계수¹</div>
+      <div class="third"></div>
+      <input
+        class="second2"
+        id="akckfrPtn"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />      
+      <div class="fourth">평균 각속도</div>
+      <input
+        class="fiveth"
+        id="vudrbsrkrthreh"
+        type="number"
+      />
+      <div class="sixth">rad/s</div>
+    </article>
+
+    <article class="containers28">
+      <div class="first">중력가속도</div>
+      <div class="third">m/s²</div>
+      <input
+        class="second2"
+        id="wndfurrkthreh"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />      
+      <div class="fourth">가속시 요구토크</div>
+      <input
+        class="fiveth"
+        id="rkdyrnxhzm"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers29">
+      <div class="first">안전계수²</div>
+      <div class="third"></div>
+      <input
+        class="second2"
+        id="dkswjsrPtn"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />      
+      <div class="fourth">요구 평균토크</div>
+      <input
+        class="fiveth"
+        id="dyrnvudrbsxhzm"
+        type="number"
+      />
+      <div class="sixth">Nm</div>
+    </article>
+
+    <article class="containers299">
+      <div class="first">동기구동</div>
+      <div class="third">축</div>
+      <input
+        class="second2"
+        id="ehdrlrnehd"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />      
+      <div class="fourth1"></div>
+      <input
+        class="fiveth"
+        id="dyrngkwnd"
+        type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()"
+      />
+      <div class="sixth"></div>
+    </article>
+
+    
+    <article class="container3">
+      <div class="firstresult">제품 선정</div>
+      <input class="secondresult" id="result" type="text" />
+      <div class="thirdresult">이상 사용</div>
+    </article>
+
+    <article class="containers31">
+      <div class="first">허용 정정격 토크</div>
+      <input class="second" id="gjdydxhzm" type="number" />
+      <div class="third">ok</div>
+      <div class="fourth">수명계산</div>
+      <input class="fiveth" id="tnaudrPtks" type="number" />
+      <div class="sixth">Hours</div>
+    </article>
+
+    <article class="containers32">
+      <div class="first">기본 동적격 토크</div>
+      <input class="second" id="rlqhsxhzm" type="number" />
+      <div class="third">ok</div>
+      <div class="fourth">캠링 관성모멘트</div>
+      <input class="fiveth" id="zoaahapsxm" type="number" />
+      <div class="sixth">Kg·m²</div>
+    </article>   
+
+    <article class="containers33">
+      <div class="first">감속비</div>
+      <input class="second" id="rkathrql" type="number" />
+      <div class="third"></div>
+      <div class="fourth">모터 RPM</div>
+      <div class="sixth">rpm</div>
+      <input class="fiveth2" id="rpm" type="number"
+        onkeyup="convert1(),convert1(),convert1(),convert1()" />      
+    </article>
+    
+    <article class="containers34">
+      <div class="first">캠링 피치원 직경</div>
+      <input class="second" id="zoafldwlrrud" type="number" />
+      <div class="third">mm</div>
+      <div class="fourth">요구 감속비</div>
+      <div class="sixth">이하</div>
+      <input class="fiveth2" id="dyrnrkathr" type="number" 
+      onkeyup="convert1(),convert1(),convert1(),convert1()"/>      
+    </article>
+
+    <article class="containers36">
+      <div class="first">피니언 회전속도</div>
+      <input class="second" id="vlsldjsrpm" type="number" />
+      <div class="third">rpm</div>
+      <div class="fourth"></div>
+      <input class="fiveth" type="number" />
+      <div class="sixth"></div>
+    </article>
+
+    <article class="containers35">
+      <div class="first">피니언 피치원 직경</div>
+      <input class="second" id="vlsldjswlrrud" type="number" />
+      <div class="third">mm</div>
+      <div class="fourth">추천 감속비</div>
+      <input class="sixth1" id="of" type="text">
+      <input class="fiveth2" id="cncjsrkathr" type="number"
+      onkeyup="convert2(),convert2(),convert2(),convert2()" />      
+    </article>
+   
+
+    <article class="container4">
+      <div class="first1">감속비</div>
+      <input class="second3" id="rkathrqlresult" type="text" />
+    </article>
+
+    <article class="containers41">
+      <div class="first">모터 필요 이너셔</div>
+      <input class="second" id="motordlsjtu" type="number" />
+      <div class="third1">x10^-4·Kg·m²</div>
+      <div class="fourth">모터 정격 필요 토크</div>
+      <input class="fiveth" id="motorwjdrurxhzm" type="number" />
+      <div class="sixth2">Nm 이상</div>
+    </article>
+
+    <article class="containers42">
+      <div class="first2">감속기 최대 필요토크</div>
+      <input class="second" id="rkathrrlxhzm" type="number" />
+      <div class="third">Nm</div>
+      <div class="fourth">모터 최대 필요 토크</div>
+      <input class="fiveth" id="motorchleoxhzm" type="number" />
+      <div class="sixth2">Nm 이상</div>
+    </article>
+    
+
+    <article class="container5">
+      <div class="first1">선정모터 스펙</div>
+    </article>
+
+    <article class="containers51">
+      <div class="first">모터 정격 토크</div>
+      <div class="third">Nm</div>
+      <input
+        class="second2"
+        id="motorwjdrurxhzmpro"
+        type="number"
+        onkeyup="convert3(),convert3(),convert3(),convert3()"
+      />      
+      <div class="fourth2">모터 정격 토크 부하율</div>
+      <input
+        class="fiveth"
+        id="motorwjdrurqngk"
+        type="number"
+      />
+      <div class="sixth">%</div>
+    </article>
+
+    <article class="containers52">
+      <div class="first">모터 최대 토크</div>
+      <div class="third">Nm</div>
+      <input
+        class="second2"
+        id="motorchleoxhzmpro"
+        type="number"
+        onkeyup="convert3(),convert3(),convert3(),convert3()"
+      />      
+      <div class="fourth2">모터 최대 토크 부하율</div>
+      <input
+        class="fiveth"
+        id="motorchleoqngk"
+        type="number"
+      />
+      <div class="sixth">%</div>
+    </article>
+
+    <article class="containers53">
+      <div class="first">모터 관성모멘트</div>
+      <div class="third1">x10^-4·Kg·m²</div>
+      <input
+        class="second2"
+        id="motorahapsxm"
+        type="number"
+        onkeyup="convert3(),convert3(),convert3(),convert3()"
+      />      
+      <div class="fourth2">모터 관성모멘트 부하율</div>
+      <div class="sixth">%</div>
+      <input
+        class="fiveth"
+        id="motorahapsxmqngk"
+        type="text"
+      />
+    </article>
+
+      <article class="containers54">
+        <div class="first2">권장 부하관성 모멘트비</div>
+        <div class="third">배 이하</div>
+        <input
+          class="second2"
+          id="rnjswkdahapsxmql"
+          type="number"
+          onkeyup="convert3(),convert3(),convert3(),convert3()"
+        />        
+        <div class="fourth"></div>
+        <div class="sixth"></div>        
+        <input
+          class="fiveth"
+          id=""
+          type="number"
+          onkeyup="convert3(),convert3(),convert3(),convert3()"
+        />
+      </article>
+       <script src="main.js"></script>
+  </body>
+</html>
